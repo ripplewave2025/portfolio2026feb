@@ -1,0 +1,8 @@
+/* App-specific styles - minimal */
+
+/* Ensure full viewport coverage */
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
