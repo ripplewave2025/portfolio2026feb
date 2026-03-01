@@ -5,11 +5,23 @@ interface HeroProps {
   onExplore: () => void
 }
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768 || 'ontouchstart' in window)
+    check()
+    window.addEventListener('resize', check)
+    return () => window.removeEventListener('resize', check)
+  }, [])
+  return isMobile
+}
+
 export default function Hero({ onExplore }: HeroProps) {
   const [mousePos, setMousePos] = useState({ x: 50, y: 50 })
   const [isHovering, setIsHovering] = useState(false)
   const [contentVisible, setContentVisible] = useState(false)
   const heroRef = useRef<HTMLDivElement>(null)
+  const isMobile = useIsMobile()
 
   // Content animation on mount
   useEffect(() => {
@@ -38,6 +50,8 @@ export default function Hero({ onExplore }: HeroProps) {
   }, [])
 
   useEffect(() => {
+    if (isMobile) return // Skip mouse tracking entirely on mobile
+
     const hero = heroRef.current
     if (!hero) return
 
@@ -50,13 +64,15 @@ export default function Hero({ onExplore }: HeroProps) {
       hero.removeEventListener('mouseleave', handleMouseLeave)
       hero.removeEventListener('mouseenter', handleMouseEnter)
     }
-  }, [handleMouseMove, handleMouseLeave, handleMouseEnter])
+  }, [handleMouseMove, handleMouseLeave, handleMouseEnter, isMobile])
 
   // Wave lines canvas
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const rafRef = useRef<number | null>(null)
 
   useEffect(() => {
+    if (isMobile) return // Skip heavy canvas animation on mobile
+
     const canvas = canvasRef.current
     if (!canvas) return
 
@@ -128,10 +144,10 @@ export default function Hero({ onExplore }: HeroProps) {
       window.removeEventListener('resize', resize)
       if (rafRef.current) cancelAnimationFrame(rafRef.current)
     }
-  }, [mousePos, isHovering])
+  }, [mousePos, isHovering, isMobile])
 
   return (
-    <div ref={heroRef} className="relative min-h-screen overflow-hidden bg-dark-bg">
+    <div ref={heroRef} className={`relative min-h-screen bg-dark-bg ${isMobile ? '' : 'overflow-hidden'}`}>
       {/* Base Layer - Dark gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-dark-bg via-[#0a0a0a] to-dark-bg" />
 
