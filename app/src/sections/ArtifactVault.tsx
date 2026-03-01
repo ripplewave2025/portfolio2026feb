@@ -10,6 +10,7 @@ import {
     Sparkles,
     Github
 } from 'lucide-react'
+import Mobile3DCarousel from '../components/Mobile3DCarousel'
 
 type TabType = 'websites' | 'gpts' | 'tools'
 
@@ -178,53 +179,57 @@ export default function ArtifactVault() {
             <div className="relative z-10 max-w-6xl mx-auto">
                 {/* Websites Tab */}
                 {activeTab === 'websites' && (
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {websites.map((site, index) => (
-                            <div
-                                key={site.name}
-                                ref={(el) => { cardRefs.current[index] = el }}
-                                data-index={index}
-                                className={`group relative p-6 bg-dark-card/80 backdrop-blur-sm rounded-2xl border border-white/5 hover:border-red-accent/40 transition-all duration-700 card-hover ${visibleCards.has(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                                    }`}
-                                style={{ transitionDelay: `${(index % 6) * 80}ms` }}
-                            >
-                                {/* Platform badge */}
-                                <div className="flex items-center justify-between mb-4">
-                                    <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium ${site.platform === 'vercel'
-                                        ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20'
-                                        : 'bg-green-500/10 text-green-400 border border-green-500/20'
-                                        }`}>
-                                        {site.platform === 'github' ? <Github className="w-3 h-3" /> : <Globe className="w-3 h-3" />}
-                                        {site.platform === 'vercel' ? 'Vercel' : 'GitHub Pages'}
+                    <>
+                        <Mobile3DCarousel websites={websites} />
+
+                        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {websites.map((site, index) => (
+                                <div
+                                    key={site.name}
+                                    ref={(el) => { cardRefs.current[index] = el }}
+                                    data-index={index}
+                                    className={`group relative p-6 bg-dark-card/80 backdrop-blur-sm rounded-2xl border border-white/5 hover:border-red-accent/40 transition-all duration-700 card-hover ${visibleCards.has(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                                        }`}
+                                    style={{ transitionDelay: `${(index % 6) * 80}ms` }}
+                                >
+                                    {/* Platform badge */}
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium ${site.platform === 'vercel'
+                                            ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20'
+                                            : 'bg-green-500/10 text-green-400 border border-green-500/20'
+                                            }`}>
+                                            {site.platform === 'github' ? <Github className="w-3 h-3" /> : <Globe className="w-3 h-3" />}
+                                            {site.platform === 'vercel' ? 'Vercel' : 'GitHub Pages'}
+                                        </div>
+                                        <a
+                                            href={site.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="p-2 rounded-lg bg-white/5 text-muted-foreground hover:text-red-accent hover:bg-red-accent/10 transition-all duration-300"
+                                        >
+                                            <ExternalLink className="w-4 h-4" />
+                                        </a>
                                     </div>
+
+                                    <h3 className="text-lg font-semibold text-text-primary mb-2 group-hover:text-red-accent transition-colors duration-300">
+                                        {site.name}
+                                    </h3>
+                                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                                        {site.description}
+                                    </p>
+
                                     <a
                                         href={site.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="p-2 rounded-lg bg-white/5 text-muted-foreground hover:text-red-accent hover:bg-red-accent/10 transition-all duration-300"
+                                        className="inline-flex items-center gap-1.5 text-xs font-medium text-red-accent hover:text-red-hover transition-colors"
                                     >
-                                        <ExternalLink className="w-4 h-4" />
+                                        Visit Site <ChevronRight className="w-3 h-3" />
                                     </a>
                                 </div>
-
-                                <h3 className="text-lg font-semibold text-text-primary mb-2 group-hover:text-red-accent transition-colors duration-300">
-                                    {site.name}
-                                </h3>
-                                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                                    {site.description}
-                                </p>
-
-                                <a
-                                    href={site.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-1.5 text-xs font-medium text-red-accent hover:text-red-hover transition-colors"
-                                >
-                                    Visit Site <ChevronRight className="w-3 h-3" />
-                                </a>
-                            </div>
-                        ))}
-                    </div>
+                            ))}
+                        </div>
+                    </>
                 )}
 
                 {/* GPTs Tab */}

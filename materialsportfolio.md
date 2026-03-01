@@ -76,41 +76,42 @@ Try this right now (copy-paste into any AI):
 
 
 GPTS:
-AI for Students - AI for students. Public GPT with 5 chats, available to everyone. - Link[1]
-Am I Being Scammed - I analyze stories and images to advise on potential scams. Public with 9 chats. - Link[2]
-Bhanubhakta Digital Ghost - Digital ghost of Bhanu Bhakta Acharya, blending Nepali roots with modern innovation. Public with 1 chat. - Link[3]
-BSOD Fixer (Blue Screen Of Death) - BSOD expert helping to diagnose and fix PC issues. Includes latest Cloudstrike. Public with 200+ chats. - Link[4]
-Creative Content Companion - AI expert in content creation, aligned with user's visual style. Public with 2 chats. - Link[5]
-Cultural Guide: Darjeeling - Guides on creating a book on Nepali culture in Darjeeling. Public with 7 chats. - Link[6]
-Experiential Learning Innovator - Expert in Experiential AI Learning and educational innovation. Public with 2 chats. - Link[7]
-Family Kitchen Bot - Friendly restaurant bot to help choose food fast. Public with 10+ chats. - Link[8]
-Health advisor - Eye health advisors, including hospital and doctor insights. Public with 3 chats. - Link[9]
-Imaganery Image Igniter - Expert in creating high-quality, multi-perspective images with thorough research. Public with 4 chats. - Link[10]
-Images Just for me. - Generates themed, viral-quality images with consistent color palettes. Public with 10+ chats. - Link[11]
-Laptop Shopping Buddy - Helps compare and buy laptops and tech gear tailored to your needs. Public with 7 chats. - Link[12]
-LaughLoader - Generates jokes and comedic content for various humor styles. Public with 2 chats. - Link[13]
-Laura 'The Girlfriend' - A researched, adaptive virtual girlfriend, with a focus on emotional well-being. Public with 30+ chats. - Link[14]
-MMC - Public GPT with 2 chats, available to everyone. - Link[15]
-Nepali and English Mix song Generator - This Assistant Generates Nepali Songs, Rap and Anything. - Link[16]
-Pali Dhamma Guide - Dhamma Guide, talks in pali - Link[17]
-Political Science 2nd year Studies - Assist 2nd year political science students from NBU. Available to anyone with a link, 10+ chats. - Link[18]
-Problem Solver - Logical and compassionate problem solver - Link[19]
-Prompt Master - Enhances rough ideas into detailed HD prompts for Veo, Sora, and other video models. Public with 1 chat. - Link[20]
-RAIDEN GPT - Overclocked strategist for AI & Automation YouTube content. Public with 5 chats. - Link[21]
-Recovery Teams - A guide for digital security and account recovery. Public with 20+ chats. - Link[22]
-Saathi - नेपाली अभिभावकहरूका लागि मैत्री आवाज सहायक. Available to anyone with a link, 2 chats. - Link[23]
-SEO Animation Strategist - SEO and scriptwriting strategist for Asif, action-biased with first principles thinking. Available to anyone with a link, 1 chat. - Link[24]
-Seo for youtbe videos strategist and More - Savage YouTube strategist for Gen Z tech entrepreneurs. Public with 3 chats. - Link[25]
-Sherpa Language Expert - शेर्पा भाषा अभ्यास गर्न सहयोग गर्ने, संवाद र सुझाव सुधार गर्ने उपकरण. Public with 2 chats. - Link[26]
-Sherpa Language Expert - शेर्पा भाषा अभ्यास गर्न सहयोग गर्ने, संवाद र सुझाव सुधार गर्ने उपकरण - Link[27]
-Site Support Bot - A friendly web assistant that answers service questions and offers contact info cordially. Available to anyone with a link, 3 chats. - Link[28]
-Telugu and Nepali Translation Vice Versa - This GPT is the communication tranlslation device between Nepali and Telugu and vice versa. Public with 40+ chats. - Link[29]
-Veo Ad Concept Studio - Generates ad concepts optimized for Google Veo 3 video creation. Public with 10+ chats. - Link[30]
-Visual Decision Maker - Expert in creating, visualizing, and analyzing decision trees. - Link[31]
-बुद्धिमान साथी - म एक एआई हुँ, म नेपालीमा तपाईलाई बुझ्न र कुरा गर्न सक्छु, मलाई जे पनि सोध्नुस्। - Link[32]
-Visual Decision Maker - Expert in creating, visualizing, and analyzing decision trees. - Link[1]
-Problem Solver - Logical and compassionate problem solver - Link[2]
-Nepali and English Mix song Generator - This Assistant Generates Nepali Songs, Rap and Anything. - Link[3]
+AI for Students - AI for students. Public GPT with 5 chats, available to everyone. - https://chatgpt.com/g/g-68988c79eb2c8191a6975036a6b86284-ai-for-students
+Am I Being Scammed - I analyze stories and images to advise on potential scams. Public with 9 chats. - https://chatgpt.com/g/g-7yoJQ62BM-am-i-being-scammed
+Bhanubhakta Digital Ghost - Digital ghost of Bhanu Bhakta Acharya, blending Nepali roots with modern innovation. Public with 1 chat. - https://chatgpt.com/g/g-687132c3671c81918befffcba1aad48e-bhanubhakta-digital-ghost
+BSOD Fixer (Blue Screen Of Death) - BSOD expert helping to diagnose and fix PC issues. Includes latest Cloudstrike. Public with 200+ chats. - https://chatgpt.com/g/g-qfugicKsf-bsod-fixer-blue-screen-of-death
+Creative Content Companion - AI expert in content creation, aligned with user's visual style. Public with 2 chats. - https://chatgpt.com/g/g-rYvqJriIW-creative-content-companion
+Cultural Guide: Darjeeling - Guides on creating a book on Nepali culture in Darjeeling. Public with 7 chats. - https://chatgpt.com/g/g-H5L6gHutq-cultural-guide-darjeeling
+Experiential Learning Innovator - Expert in Experiential AI Learning and educational innovation. Public with 2 chats. - https://chatgpt.com/g/g-9l1X2dIuD-experiential-learning-innovator
+Family Kitchen Bot - Friendly restaurant bot to help choose food fast. Public with 10+ chats. - https://chatgpt.com/g/g-685cd4ab873c819184640f4f95c123ff-family-kitchen-bot
+Health advisor - Eye health advisors, including hospital and doctor insights. Public with 3 chats. - https://chatgpt.com/g/g-68898cdbb42c81919be3a46f9443eb82-health-advisor
+Imaganery Image Igniter - Expert in creating high-quality, multi-perspective images with thorough research. Public with 4 chats. - https://chatgpt.com/g/g-TVNOQXFjY-imaganery-image-igniter
+Images Just for me. - Generates themed, viral-quality images with consistent color palettes. Public with 10+ chats. - https://chatgpt.com/g/g-RyvtbiR97-images-just-for-me
+Laptop Shopping Buddy - Helps compare and buy laptops and tech gear tailored to your needs. Public with 7 chats. - https://chatgpt.com/g/g-683e8c8b5a648191b7b9dc1c2b5a7fe7-laptop-shopping-buddy
+LaughLoader - Generates jokes and comedic content for various humor styles. Public with 2 chats. - https://chatgpt.com/g/g-2hCKEVN8Y-laughloader
+Laura 'The Girlfriend' - A researched, adaptive virtual girlfriend, with a focus on emotional well-being. Public with 30+ chats. - https://chatgpt.com/g/g-tv9JRspoC-laura-the-girlfriend
+MMC - Public GPT with 2 chats, available to everyone. - https://chatgpt.com/g/g-685b446b50b88191a76c4c6ccf03852f-mmc
+Nepali and English Mix song Generator - This Assistant Generates Nepali Songs, Rap and Anything. - https://chatgpt.com/g/g-e58XmM7KF-nepali-and-english-mix-song-generator
+Pali Dhamma Guide - Dhamma Guide, talks in pali - https://chatgpt.com/g/g-693ced5c2dbc819195b402a26a26d9b8-pali-language-chatbot
+Political Science 2nd year Studies - Assist 2nd year political science students from NBU. Available to anyone with a link, 10+ chats. - https://chatgpt.com/g/g-q7PxQdAiL-political-science-2nd-year-studies
+Problem Solver - Logical and compassionate problem solver - https://chatgpt.com/g/g-XkIiEruJN-problem-solver
+Prompt Master - Enhances rough ideas into detailed HD prompts for Veo, Sora, and other video models. Public with 1 chat. - https://chatgpt.com/g/g-68675c3ebc288191a150663814317672-prompt-master
+RAIDEN GPT - Overclocked strategist for AI & Automation YouTube content. Public with 5 chats. - https://chatgpt.com/g/g-6816ca0518ac8191a2667aea43563bdc-raiden-gpt
+Recovery Teams - A guide for digital security and account recovery. Public with 20+ chats. - https://chatgpt.com/g/g-DE65qA0rf-recovery-teams
+Saathi - नेपाली अभिभावकहरूका लागि मैत्री आवाज सहायक. Available to anyone with a link, 2 chats. - https://chatgpt.com/g/g-6859f0ed1ccc81918e9da9acbe5d9642-saathi
+SEO Animation Strategist - SEO and scriptwriting strategist for Asif, action-biased with first principles thinking. Available to anyone with a link, 1 chat. - https://chatgpt.com/g/g-68155a81ad58819192a0152d0de4dec0-seo-animation-strategist
+Seo for youtbe videos strategist and More - Savage YouTube strategist for Gen Z tech entrepreneurs. Public with 3 chats. - https://chatgpt.com/g/g-68156e02a1288191b05fc73a497bddcb-seo-for-youtbe-videos-strategist-and-more
+Sherpa Language Expert - शेर्पा भाषा अभ्यास गर्न सहयोग गर्ने, संवाद र सुझाव सुधार गर्ने उपकरण. Public with 2 chats. - https://chatgpt.com/g/g-68723260134881918a4aad5bee431c17-sherpa-language-expert
+Sherpa Language Expert - शेर्पा भाषा अभ्यास गर्न सहयोग गर्ने, संवाद र सुझाव सुधार गर्ने उपकरण - https://chatgpt.com/g/g-68723260134881918a4aad5bee431c17-sherpa-language-expert
+Site Support Bot - A friendly web assistant that answers service questions and offers contact info cordially. Available to anyone with a link, 3 chats. - https://chatgpt.com/g/g-685093efda5c81919ac05d608c1eec39-site-support-bot
+Telugu and Nepali Translation Vice Versa - This GPT is the communication tranlslation device between Nepali and Telugu and vice versa. Public with 40+ chats. - https://chatgpt.com/g/g-674bdd98b8e88191acd463378e63e1f7-telugu-and-nepali-translation-vice-versa
+Veo Ad Concept Studio - Generates ad concepts optimized for Google Veo 3 video creation. Public with 10+ chats. - https://chatgpt.com/g/g-6867cb073dcc8191ad7ac8ab3dbe2622-veo-ad-concept-studio
+Visual Decision Maker - Expert in creating, visualizing, and analyzing decision trees. - https://chatgpt.com/g/g-1IYCPvwRA-visual-decision-maker
+बुद्धिमान साथी - म एक एआई हुँ, म नेपालीमा तपाईलाई बुझ्न र कुरा गर्न सक्छु, मलाई जे पनि सोध्नुस्। - https://chatgpt.com/g/g-HOwRACnVB-buddhimaan-saathii
+Visual Decision Maker - Expert in creating, visualizing, and analyzing decision trees. - https://chatgpt.com/g/g-1IYCPvwRA-visual-decision-maker
+Problem Solver - Logical and compassionate problem solver - https://chatgpt.com/g/g-XkIiEruJN-problem-solver
+Nepali and English Mix song Generator - This Assistant Generates Nepali Songs, Rap and Anything. - https://chatgpt.com/g/g-e58XmM7KF-nepali-and-english-mix-song-generator
+
 
 Please categorize this according to trend - think of what people use actually
 
@@ -160,3 +161,58 @@ SherpaLanguage
  (An open R&D website dedicated to Sherpa and related Himalayan languages) 
 https://ripplewave2025.github.io/SherpaLanguage/
 
+# Skills
+
+## AI Systems & Automation
+
+* AI Systems Design
+* Prompt Engineering
+* Custom GPT Development
+* Retrieval-Augmented Generation (RAG) – Conceptual & Applied
+* AI Workflow Automation
+* Agent Architecture (Conceptual)
+* Local Model Exploration
+
+## Programming & Systems
+
+* Python (Automation, AI Prototyping)
+* C / C++ (Foundational Systems Knowledge)
+* Assembly & Binary Fundamentals
+* Data Structures & Algorithms (Working Knowledge)
+* JSON & Data Handling
+* Linux (Ubuntu / Kali Basics)
+* Git & GitHub
+
+## Product & Process Engineering
+
+* MVP Design & Rapid Prototyping
+* Systems Architecture Thinking
+* Process Automation & Optimization
+* Customer Journey Mapping
+* Technical Troubleshooting (Enterprise Support)
+* SEO & AI-Driven Marketing Systems
+* Landing Page Optimization
+
+## Communication & Education
+
+* Technical Explanation for Non-Technical Users
+* AI Workshop Facilitation
+* Technical Writing & Documentation
+* Podcast Planning & Structuring
+* Public Content Strategy (Twitter / Threads)
+* Structured Knowledge Transfer
+
+---
+
+## Currently Learning
+
+* Advanced Autonomous Agents
+* Distributed Systems Concepts
+* Data Science Foundations
+* AI + Healthcare Integration Models
+
+---
+
+## Core Strength
+
+Building scalable AI-driven systems that combine technical depth, product thinking, and clear communication.
