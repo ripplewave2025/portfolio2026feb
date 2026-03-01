@@ -17,29 +17,28 @@ function App() {
 
   // Handle scroll to update current page
   useEffect(() => {
-    const handleScroll = () => {
-      if (isScrolling) return
+    if (isScrolling) return
 
-      const scrollY = window.scrollY
-      const windowHeight = window.innerHeight
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id as PageType
+          if (id) {
+            setCurrentPage(id)
+          }
+        }
+      })
+    }, {
+      rootMargin: '-40% 0px -50% 0px' // Triggers when the top of the section hits the middle of the screen
+    })
 
-      if (scrollY < windowHeight * 0.5) {
-        setCurrentPage('hero')
-      } else if (scrollY < windowHeight * 1.5) {
-        setCurrentPage('past')
-      } else if (scrollY < windowHeight * 2.5) {
-        setCurrentPage('now')
-      } else if (scrollY < windowHeight * 3.5) {
-        setCurrentPage('vault')
-      } else if (scrollY < windowHeight * 4.5) {
-        setCurrentPage('future')
-      } else {
-        setCurrentPage('beliefs')
-      }
-    }
+    const sections = ['hero', 'past', 'now', 'vault', 'future', 'beliefs']
+    sections.forEach((id) => {
+      const el = document.getElementById(id)
+      if (el) observer.observe(el)
+    })
 
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => observer.disconnect()
   }, [isScrolling])
 
   // Smooth scroll to section

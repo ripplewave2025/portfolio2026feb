@@ -153,7 +153,7 @@ export default function Hero({ onExplore }: HeroProps) {
 
       {/* Photo Layer - Revealed by mask at cursor position */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-100"
+        className="absolute inset-0 bg-cover bg-top sm:bg-center bg-no-repeat transition-all duration-100"
         style={{
           backgroundImage: 'url(/headshot.jpg)',
           maskImage: isHovering
@@ -164,6 +164,11 @@ export default function Hero({ onExplore }: HeroProps) {
             : 'none',
         }}
       />
+
+      {/* Mobile Dark Overlay to improve contrast for buttons */}
+      {isMobile && (
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/60 to-transparent pointer-events-none z-10" />
+      )}
 
       {/* Secondary reveal spots for navbar and social areas */}
       {isHovering && (
@@ -256,7 +261,7 @@ export default function Hero({ onExplore }: HeroProps) {
             className={`transition-all duration-1000 delay-500 ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
           >
-            <span className="inline-block px-4 py-2 mb-6 text-xs md:text-sm font-medium tracking-widest uppercase text-red-accent bg-red-accent/10 rounded-full border border-red-accent/20">
+            <span className="inline-block px-4 py-2 mb-6 text-xs md:text-sm font-medium tracking-widest uppercase text-red-accent bg-red-accent/10 rounded-full border border-red-accent/20 drop-shadow-md backdrop-blur-sm">
               Any sufficiently advanced technology is indistinguishable from magic
             </span>
           </div>

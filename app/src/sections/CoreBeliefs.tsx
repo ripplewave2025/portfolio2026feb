@@ -157,14 +157,14 @@ export default function CoreBeliefs() {
 
                     <Sparkles className="w-8 h-8 text-red-accent mx-auto mb-6" />
 
-                    <blockquote className="text-lg md:text-xl text-text-secondary leading-relaxed italic px-4">
+                    <blockquote className="text-xl md:text-2xl text-text-primary font-medium leading-relaxed md:leading-loose italic px-6 max-w-4xl mx-auto text-center">
                         In the age of accelerating AI, nothing matters more than learning to communicate with clarity,
                         seeking truth as rigorously as possible, staying deeply curious, and honestly documenting and
                         preserving our cultures while truly understanding them.
                     </blockquote>
 
                     <div className="mt-8">
-                        <p className="text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">
+                        <p className="text-base md:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed md:leading-loose">
                             Humans have been the most intelligent species on Earth for our entire history.
                             That chapter is closing faster than most people realise. That is exactly why I am building
                             personal AI assistants from my home in Lamahatta, Darjeeling.
@@ -196,11 +196,44 @@ export default function CoreBeliefs() {
                     </div>
                 </div>
 
-                {/* Final CTA */}
+                {/* Interactive GPTs */}
                 <div
                     ref={(el) => { itemRefs.current[6] = el }}
                     data-index={6}
-                    className={`text-center transition-all duration-1000 ${visibleItems.has(6) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+                    className={`relative max-w-4xl mx-auto transition-all duration-700 ${visibleItems.has(6) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                        }`}
+                >
+                    <h3 className="text-center text-2xl font-bold text-text-primary mb-8">
+                        Experience it <span className="text-red-accent">Yourself</span>
+                    </h3>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {[
+                            { name: 'BSOD Fixer', description: 'Diagnose and fix PC blue screen issues quickly.', link: 'https://chat.openai.com/g/g-bsod-fixer' },
+                            { name: 'Laura — The Girlfriend', description: 'Adaptive virtual companion for emotional well-being.', link: 'https://chat.openai.com/g/g-laura' },
+                            { name: 'AI for Students', description: 'Public GPT helping students learn with AI.', link: 'https://chat.openai.com/g/g-ai-for-students' }
+                        ].map((gpt) => (
+                            <a
+                                key={gpt.name}
+                                href={gpt.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group block p-6 bg-dark-card/60 backdrop-blur-sm rounded-2xl border border-white/5 hover:border-red-accent/40 transition-all duration-300 hover:-translate-y-1"
+                            >
+                                <h4 className="font-bold text-text-primary mb-2 group-hover:text-red-accent transition-colors">{gpt.name}</h4>
+                                <p className="text-sm text-text-secondary leading-relaxed mb-4">{gpt.description}</p>
+                                <span className="inline-flex items-center text-xs font-semibold text-red-accent uppercase tracking-wider">
+                                    Try it now <ArrowRight className="w-3 h-3 ml-2 group-hover:translate-x-1 transition-transform" />
+                                </span>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Final CTA */}
+                <div
+                    ref={(el) => { itemRefs.current[7] = el }}
+                    data-index={7}
+                    className={`text-center transition-all duration-1000 ${visibleItems.has(7) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
                         }`}
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-6">

@@ -1,19 +1,15 @@
 import { useEffect, useRef, useState } from 'react'
 import {
   Monitor,
-  FileSpreadsheet,
   Bot,
-  Eye,
-  Users,
   BrainCircuit,
   MessageSquare,
   Layers,
-  Globe,
   Mic,
   BookOpen,
   Code,
-  Wrench,
-  TrendingUp
+  Terminal,
+  GraduationCap
 } from 'lucide-react'
 
 interface Skill {
@@ -29,43 +25,31 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: 'Technical Skills',
+    title: 'Core Expertise',
     skills: [
-      { name: 'Windows 10/11 Advanced', icon: Monitor, level: 95 },
-      { name: 'Microsoft Office Suite', icon: FileSpreadsheet, level: 90 },
-      { name: 'Excel', icon: FileSpreadsheet, level: 85 },
-      { name: 'Generative AI', icon: Bot, level: 80 },
-    ],
-  },
-  {
-    title: 'Soft Skills',
-    skills: [
-      { name: 'Observation', icon: Eye, level: 95 },
-      { name: 'Customer Relationship', icon: Users, level: 90 },
-      { name: 'Decision Making', icon: BrainCircuit, level: 85 },
-      { name: 'Communication', icon: MessageSquare, level: 90 },
-      { name: 'Multi-tasking', icon: Layers, level: 88 },
-      { name: 'Interpersonal Skills', icon: Users, level: 92 },
+      { name: 'AI Systems & Automation', icon: Bot, level: 95 },
+      { name: 'Product & Process Engineering', icon: BrainCircuit, level: 90 },
+      { name: 'Education & Technical Communication', icon: MessageSquare, level: 92 },
     ],
   },
 ]
 
 const currentFocus = [
+  { name: 'aiforstudents.online', icon: GraduationCap, description: 'Trying to map curiosity through mapping the quality and quantity of questions students asked, teachers records and direct it, personal review.' },
   { name: 'Hyper-Personalised AI Assistant', icon: Bot, description: 'Remembers everything about you, gives guidance, and keeps you on track.' },
   { name: 'Personal Tech Support AI', icon: Monitor, description: 'Specialized assistant for Windows devices — makes computers easy for anyone.' },
-  { name: 'Websites & Experiments', icon: Globe, description: 'Clean, useful websites for small businesses + AI education + tools + chatbots.' },
   { name: 'Knowledge Compression', icon: BookOpen, description: 'Turning 8-hour topics into 1-hour sessions by cross-referencing what you already know.' },
   { name: 'Quantum + AI Systems', icon: Code, description: 'Combining classical AI with quantum computing to break the limits of distance.' },
   { name: 'Language Preservation', icon: Mic, description: 'AI chatbots for endangered languages like Sherpa and Bhutia.' },
 ]
 
 const tools = [
-  { name: 'Windows OS', icon: Monitor },
-  { name: 'MS Office', icon: FileSpreadsheet },
-  { name: 'AI Tools', icon: Bot },
-  { name: 'Web Development', icon: Code },
-  { name: 'Productivity', icon: Wrench },
-  { name: 'Analytics', icon: TrendingUp },
+  { name: 'Antigravity (Creative AI experimentation)', icon: Bot },
+  { name: 'Codex (Code generation & debugging workflows)', icon: Code },
+  { name: 'Claude (Long-form reasoning & structured analysis)', icon: BrainCircuit },
+  { name: 'OpenClaudia (Local / alternative model experimentation)', icon: Monitor },
+  { name: 'CLI Environments (PowerShell, Linux Terminal)', icon: Terminal },
+  { name: 'AI Model Orchestration (Multi-model workflow design)', icon: Layers },
 ]
 
 export default function NowPage() {
@@ -125,48 +109,48 @@ export default function NowPage() {
             My <span className="text-red-accent">Skills</span>
           </h3>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-1 gap-8 max-w-3xl mx-auto">
             {skillCategories.map((category, catIndex) => (
               <div
                 key={category.title}
                 ref={(el) => { cardRefs.current[catIndex] = el }}
                 data-index={catIndex}
-                className={`p-6 bg-dark-card/80 backdrop-blur-sm rounded-2xl border border-white/5 hover:border-red-accent/30 transition-all duration-700 card-hover ${visibleCards.has(catIndex) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                className={`p-6 md:p-8 bg-dark-card/80 backdrop-blur-sm rounded-2xl border border-white/5 hover:border-red-accent/30 transition-all duration-700 card-hover ${visibleCards.has(catIndex) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                   }`}
               >
-                <h4 className="text-lg font-semibold text-text-primary mb-6 flex items-center gap-2">
+                <h4 className="text-xl font-semibold text-text-primary mb-8 flex items-center gap-3">
                   <span className="w-8 h-1 bg-red-accent rounded-full" />
                   {category.title}
                 </h4>
 
-                <div className="space-y-4">
+                <div className="space-y-6">
                   {category.skills.map((skill, skillIndex) => {
                     const Icon = skill.icon
                     const isProgressVisible = progressBars.has(catIndex.toString())
 
                     return (
                       <div key={skill.name} className="group">
-                        <div className="flex items-center justify-between mb-2">
-                          <div className="flex items-center gap-3">
-                            <div className="p-2 bg-red-accent/10 rounded-lg group-hover:bg-red-accent/20 transition-colors">
-                              <Icon className="w-4 h-4 text-red-accent" />
+                        <div className="flex items-center justify-between mb-3">
+                          <div className="flex items-center gap-4">
+                            <div className="p-2.5 bg-red-accent/10 rounded-xl group-hover:bg-red-accent/20 transition-colors">
+                              <Icon className="w-5 h-5 text-red-accent" />
                             </div>
-                            <span className="text-sm text-text-secondary group-hover:text-text-primary transition-colors">
+                            <span className="text-base font-medium text-text-secondary group-hover:text-text-primary transition-colors">
                               {skill.name}
                             </span>
                           </div>
                           {skill.level && (
-                            <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                            <span className="text-sm font-medium text-muted-foreground">{skill.level}%</span>
                           )}
                         </div>
 
                         {skill.level && (
-                          <div className="h-2 bg-white/5 rounded-full overflow-hidden">
+                          <div className="h-2.5 bg-white/5 rounded-full overflow-hidden">
                             <div
                               className="h-full bg-gradient-to-r from-red-accent to-pink-accent rounded-full transition-all duration-1000 ease-out"
                               style={{
                                 width: isProgressVisible ? `${skill.level}%` : '0%',
-                                transitionDelay: `${skillIndex * 100}ms`,
+                                transitionDelay: `${skillIndex * 150}ms`,
                               }}
                             />
                           </div>
@@ -220,7 +204,7 @@ export default function NowPage() {
         {/* Tools I Use */}
         <div>
           <h3 className="text-2xl font-bold text-text-primary mb-8 text-center">
-            Tools I <span className="text-red-accent">Use</span>
+            AI & Development <span className="text-red-accent">Stack</span>
           </h3>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -243,16 +227,26 @@ export default function NowPage() {
         </div>
 
         {/* Quote Section */}
-        <div className="relative max-w-3xl mx-auto text-center py-12">
-          <div className="quote-mark absolute -top-4 left-1/2 -translate-x-1/2">&ldquo;</div>
-          <blockquote className="relative z-10 text-xl md:text-2xl text-text-secondary italic leading-relaxed">
-            I keep formulating the right questions. Once the question is right,
-            the answer is often the easiest part — especially in this AI era.
-          </blockquote>
-          <div className="mt-6 flex items-center justify-center gap-2">
-            <div className="w-8 h-0.5 bg-red-accent rounded-full" />
-            <span className="text-sm text-muted-foreground uppercase tracking-wider">My Mantra: T·C·P — Teleportation · Content · Podcast</span>
-            <div className="w-8 h-0.5 bg-red-accent rounded-full" />
+        <div className="relative max-w-3xl mx-auto text-center py-16 px-6">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-accent/5 to-transparent rounded-3xl blur-xl" />
+          <div className="relative z-10 p-8 rounded-2xl border border-red-accent/10 bg-dark-card/40 backdrop-blur-md">
+            <div className="text-4xl text-red-accent/40 mb-2 font-serif">&ldquo;</div>
+            <blockquote className="text-2xl md:text-3xl text-text-primary font-medium leading-relaxed tracking-tight mb-6">
+              I keep formulating the right questions. Once the question is right,
+              the answer is often the easiest part <span className="text-red-accent">— especially in this AI era.</span>
+            </blockquote>
+            <div className="mt-8 flex flex-col items-center justify-center gap-3">
+              <span className="inline-block px-4 py-1.5 bg-red-accent/10 border border-red-accent/20 rounded-full text-xs font-bold text-red-accent uppercase tracking-widest">
+                My Mantra
+              </span>
+              <div className="flex items-center justify-center gap-4 text-sm font-semibold text-text-secondary uppercase tracking-widest mt-2">
+                <span>Teleportation</span>
+                <div className="w-1.5 h-1.5 rounded-full bg-red-accent/50" />
+                <span>Content</span>
+                <div className="w-1.5 h-1.5 rounded-full bg-red-accent/50" />
+                <span>Podcast</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

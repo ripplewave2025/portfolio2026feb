@@ -38,8 +38,8 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-            ? 'glass-nav py-3'
-            : 'bg-transparent py-6'
+          ? 'glass-nav py-3'
+          : 'bg-transparent py-6'
           }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,8 +59,8 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                   key={item.id}
                   onClick={() => handleNavClick(item.id)}
                   className={`relative px-4 py-2 text-sm font-medium uppercase tracking-wider transition-all duration-300 rounded-lg group ${currentPage === item.id
-                      ? 'text-white'
-                      : 'text-text-secondary hover:text-white'
+                    ? 'text-white'
+                    : 'text-text-secondary hover:text-white'
                     }`}
                 >
                   {/* Active indicator */}
@@ -101,7 +101,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
       >
         {/* Backdrop */}
         <div
-          className="absolute inset-0 bg-black/80 backdrop-blur-lg"
+          className="absolute inset-0 mobile-menu-blur"
           onClick={() => setIsMobileMenuOpen(false)}
         />
 
@@ -116,8 +116,8 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
                 className={`relative px-4 py-4 text-left text-lg font-medium uppercase tracking-wider transition-all duration-300 rounded-xl group ${currentPage === item.id
-                    ? 'text-white bg-red-accent/20'
-                    : 'text-text-secondary hover:text-white hover:bg-white/5'
+                  ? 'text-white bg-red-accent/20'
+                  : 'text-text-secondary hover:text-white hover:bg-white/5'
                   }`}
                 style={{
                   animationDelay: `${index * 100}ms`,

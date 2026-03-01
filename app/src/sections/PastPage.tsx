@@ -10,7 +10,8 @@ import {
   PhoneCall,
   Headphones,
   Star,
-  ArrowUp
+  ArrowUp,
+  ArrowDown
 } from 'lucide-react'
 
 interface TimelineEvent {
@@ -110,9 +111,12 @@ const timelineEvents: TimelineEvent[] = [
 
 export default function PastPage() {
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set())
+  const [isExpanded, setIsExpanded] = useState(false)
   const [lineProgress, setLineProgress] = useState(0)
   const sectionRef = useRef<HTMLDivElement>(null)
   const itemRefs = useRef<(HTMLDivElement | null)[]>([])
+
+  const displayedEvents = isExpanded ? timelineEvents : timelineEvents.slice(0, 3)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -187,7 +191,7 @@ export default function PastPage() {
 
         {/* Timeline Events */}
         <div className="space-y-12 md:space-y-0">
-          {timelineEvents.map((event, index) => {
+          {displayedEvents.map((event, index) => {
             const isVisible = visibleItems.has(index)
             const Icon = event.icon
             const isLeft = event.side === 'left'
@@ -216,12 +220,12 @@ export default function PastPage() {
                       </div>
                       <h3 className="text-lg font-semibold text-text-primary">{event.title}</h3>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{event.description}</p>
+                    <p className="text-[14px] md:text-[15px] text-text-secondary leading-relaxed md:leading-loose tracking-wide">{event.description}</p>
                   </div>
                 </div>
 
                 {/* Desktop: Alternating sides */}
-                <div className={`hidden md:block ${isLeft ? '' : 'md:col-start-2'}`}>
+                <div className="hidden md:block">
                   {isLeft && (
                     <div
                       className={`relative p-6 bg-dark-card rounded-xl border border-white/5 hover:border-red-accent/30 transition-all duration-700 card-hover ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
@@ -237,9 +241,9 @@ export default function PastPage() {
                         </div>
                         <h3 className="text-lg font-semibold text-text-primary">{event.title}</h3>
                       </div>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{event.description}</p>
+                      <p className="text-[14px] md:text-[15px] text-text-secondary leading-relaxed md:leading-loose tracking-wide">{event.description}</p>
 
-                      <div className="absolute top-1/2 -right-3 w-6 h-6 bg-dark-card border-t border-r border-white/5 rotate-45 -translate-y-1/2 hidden lg:block" />
+                      <div className="absolute top-1/2 -right-3 w-6 h-6 bg-dark-card border-t border-r border-white/5 rotate-45 -translate-y-1/2 hidden md:block" />
                     </div>
                   )}
                 </div>
@@ -253,7 +257,7 @@ export default function PastPage() {
                 </div>
 
                 {/* Right side content */}
-                <div className={`hidden md:block ${isLeft ? 'md:col-start-2' : ''}`}>
+                <div className="hidden md:block">
                   {!isLeft && (
                     <div
                       className={`relative p-6 bg-dark-card rounded-xl border border-white/5 hover:border-red-accent/30 transition-all duration-700 card-hover ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
@@ -269,9 +273,9 @@ export default function PastPage() {
                         </div>
                         <h3 className="text-lg font-semibold text-text-primary">{event.title}</h3>
                       </div>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{event.description}</p>
+                      <p className="text-[14px] md:text-[15px] text-text-secondary leading-relaxed md:leading-loose tracking-wide">{event.description}</p>
 
-                      <div className="absolute top-1/2 -left-3 w-6 h-6 bg-dark-card border-b border-l border-white/5 rotate-45 -translate-y-1/2 hidden lg:block" />
+                      <div className="absolute top-1/2 -left-3 w-6 h-6 bg-dark-card border-b border-l border-white/5 rotate-45 -translate-y-1/2 hidden md:block" />
                     </div>
                   )}
                 </div>
@@ -288,8 +292,28 @@ export default function PastPage() {
           })}
         </div>
 
+        {/* Expand/Collapse Toggle */}
+        <div className="relative mt-16 text-center z-20">
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="inline-flex items-center gap-2 px-8 py-3 bg-dark-card rounded-full border border-red-accent/30 hover:border-red-accent hover:bg-red-accent/10 transition-all duration-300 text-sm font-medium text-text-primary"
+          >
+            {isExpanded ? (
+              <>
+                <span>Show Less</span>
+                <ArrowUp className="w-4 h-4 text-red-accent" />
+              </>
+            ) : (
+              <>
+                <span>Explore Full Journey</span>
+                <ArrowDown className="w-4 h-4 text-red-accent" />
+              </>
+            )}
+          </button>
+        </div>
+
         {/* End Indicator */}
-        <div className="relative mt-16 text-center">
+        <div className={`relative mt-16 text-center transition-all duration-700 ${isExpanded ? 'opacity-100 translate-y-0 height-auto' : 'opacity-0 -translate-y-8 hidden'}`}>
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-dark-card rounded-full border border-red-accent/30">
             <ArrowUp className="w-4 h-4 text-red-accent" />
             <span className="text-sm text-text-secondary">This is where I am beginning to see clearly</span>

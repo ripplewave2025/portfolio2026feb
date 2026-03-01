@@ -46,40 +46,40 @@ const websites: Website[] = [
 ]
 
 const gpts: GPT[] = [
-    { name: 'BSOD Fixer', description: 'BSOD expert helping to diagnose and fix PC blue screen issues. Includes Cloudstrike fixes.', chats: '200+', link: '#', category: 'Tech Support' },
-    { name: 'Telugu ↔ Nepali', description: 'Translation device between Nepali and Telugu and vice versa.', chats: '40+', link: '#', category: 'Language' },
-    { name: 'Laura — The Girlfriend', description: 'Researched, adaptive virtual companion focused on emotional well-being.', chats: '30+', link: '#', category: 'Companion' },
-    { name: 'Recovery Teams', description: 'A guide for digital security and account recovery.', chats: '20+', link: '#', category: 'Tech Support' },
-    { name: 'Family Kitchen Bot', description: 'Friendly restaurant bot to help choose food fast.', chats: '10+', link: '#', category: 'Utility' },
-    { name: 'Images Just for Me', description: 'Generates themed, viral-quality images with consistent color palettes.', chats: '10+', link: '#', category: 'Creative' },
-    { name: 'Veo Ad Concept Studio', description: 'Generates ad concepts optimized for Google Veo 3 video creation.', chats: '10+', link: '#', category: 'Creative' },
-    { name: 'Political Science 2nd Yr', description: 'Assists 2nd year political science students from NBU.', chats: '10+', link: '#', category: 'Education' },
-    { name: 'Am I Being Scammed?', description: 'Analyzes stories and images to advise on potential scams.', chats: '9', link: '#', category: 'Safety' },
-    { name: 'Cultural Guide: Darjeeling', description: 'Guides on creating a book on Nepali culture in Darjeeling.', chats: '7', link: '#', category: 'Culture' },
-    { name: 'Laptop Shopping Buddy', description: 'Compares and recommends laptops and tech gear tailored to your needs.', chats: '7', link: '#', category: 'Tech Support' },
-    { name: 'AI for Students', description: 'Public GPT helping students learn with AI.', chats: '5', link: '#', category: 'Education' },
-    { name: 'RAIDEN GPT', description: 'Overclocked strategist for AI & Automation YouTube content.', chats: '5', link: '#', category: 'Creative' },
-    { name: 'Imagenary Image Igniter', description: 'Expert in creating high-quality, multi-perspective images with research.', chats: '4', link: '#', category: 'Creative' },
-    { name: 'Health Advisor', description: 'Eye health advisors, including hospital and doctor insights.', chats: '3', link: '#', category: 'Health' },
-    { name: 'Site Support Bot', description: 'Friendly web assistant that answers service questions.', chats: '3', link: '#', category: 'Utility' },
-    { name: 'SEO YouTube Strategist', description: 'Savage YouTube strategist for Gen Z tech entrepreneurs.', chats: '3', link: '#', category: 'Creative' },
-    { name: 'Creative Content Companion', description: 'AI expert in content creation, aligned with your visual style.', chats: '2', link: '#', category: 'Creative' },
-    { name: 'Experiential Learning', description: 'Expert in Experiential AI Learning and educational innovation.', chats: '2', link: '#', category: 'Education' },
-    { name: 'LaughLoader', description: 'Generates jokes and comedic content for various humor styles.', chats: '2', link: '#', category: 'Entertainment' },
-    { name: 'Sherpa Language Expert', description: 'शेर्पा भाषा अभ्यास — Sherpa language practice tool.', chats: '2', link: '#', category: 'Language' },
-    { name: 'Saathi', description: 'नेपाली अभिभावकहरूका लागि मैत्री आवाज सहायक — Voice helper for Nepali parents.', chats: '2', link: '#', category: 'Language' },
-    { name: 'बुद्धिमान साथी', description: 'नेपालीमा कुरा गर्ने AI — Nepali-speaking AI companion.', chats: '2', link: '#', category: 'Language' },
-    { name: 'MMC', description: 'Public GPT available to everyone.', chats: '2', link: '#', category: 'Utility' },
-    { name: 'Bhanubhakta Digital Ghost', description: 'Digital ghost of Bhanu Bhakta Acharya, blending Nepali roots with modern innovation.', chats: '1', link: '#', category: 'Culture' },
-    { name: 'Pali Dhamma Guide', description: 'Dhamma Guide that speaks in Pali.', chats: '1', link: '#', category: 'Culture' },
-    { name: 'Prompt Master', description: 'Enhances rough ideas into detailed prompts for Veo, Sora, and other video models.', chats: '1', link: '#', category: 'Creative' },
-    { name: 'SEO Animation Strategist', description: 'SEO and scriptwriting strategist, action-biased with first principles thinking.', chats: '1', link: '#', category: 'Creative' },
-    { name: 'Nepali Song Generator', description: 'Generates Nepali songs, rap, and any kind of music.', chats: '-', link: '#', category: 'Creative' },
-    { name: 'Problem Solver', description: 'Logical and compassionate problem solver.', chats: '-', link: '#', category: 'Utility' },
-    { name: 'Visual Decision Maker', description: 'Expert in creating, visualizing, and analyzing decision trees.', chats: '-', link: '#', category: 'Utility' },
+    { name: 'BSOD Fixer', description: 'BSOD expert helping to diagnose and fix PC blue screen issues. Includes Cloudstrike fixes.', chats: '200+', link: '#', category: 'Productivity & Tech' },
+    { name: 'Recovery Teams', description: 'A guide for digital security and account recovery.', chats: '20+', link: '#', category: 'Productivity & Tech' },
+    { name: 'Problem Solver', description: 'Logical and compassionate problem solver.', chats: '-', link: '#', category: 'Productivity & Tech' },
+    { name: 'Am I Being Scammed?', description: 'Analyzes stories and images to advise on potential scams.', chats: '9', link: '#', category: 'Productivity & Tech' },
+    { name: 'Site Support Bot', description: 'Friendly web assistant that answers service questions.', chats: '3', link: '#', category: 'Productivity & Tech' },
+    { name: 'Images Just for Me', description: 'Generates themed, viral-quality images with consistent color palettes.', chats: '10+', link: '#', category: 'Creative Studio' },
+    { name: 'Veo Ad Concept Studio', description: 'Generates ad concepts optimized for Google Veo 3 video creation.', chats: '10+', link: '#', category: 'Creative Studio' },
+    { name: 'RAIDEN GPT', description: 'Overclocked strategist for AI & Automation YouTube content.', chats: '5', link: '#', category: 'Creative Studio' },
+    { name: 'Imagenary Image Igniter', description: 'Expert in creating high-quality, multi-perspective images with research.', chats: '4', link: '#', category: 'Creative Studio' },
+    { name: 'SEO YouTube Strategist', description: 'Savage YouTube strategist for Gen Z tech entrepreneurs.', chats: '3', link: '#', category: 'Creative Studio' },
+    { name: 'Creative Content Companion', description: 'AI expert in content creation, aligned with your visual style.', chats: '2', link: '#', category: 'Creative Studio' },
+    { name: 'Prompt Master', description: 'Enhances rough ideas into detailed prompts for Veo, Sora, and other video models.', chats: '1', link: '#', category: 'Creative Studio' },
+    { name: 'SEO Animation Strategist', description: 'SEO and scriptwriting strategist, action-biased with first principles thinking.', chats: '1', link: '#', category: 'Creative Studio' },
+    { name: 'Nepali Song Generator', description: 'Generates Nepali songs, rap, and any kind of music.', chats: '-', link: '#', category: 'Creative Studio' },
+    { name: 'AI for Students', description: 'Public GPT helping students learn with AI.', chats: '5', link: '#', category: 'Learning & Knowledge' },
+    { name: 'Political Science 2nd Yr', description: 'Assists 2nd year political science students from NBU.', chats: '10+', link: '#', category: 'Learning & Knowledge' },
+    { name: 'Experiential Learning', description: 'Expert in Experiential AI Learning and educational innovation.', chats: '2', link: '#', category: 'Learning & Knowledge' },
+    { name: 'Cultural Guide: Darjeeling', description: 'Guides on creating a book on Nepali culture in Darjeeling.', chats: '7', link: '#', category: 'Learning & Knowledge' },
+    { name: 'Bhanubhakta Digital Ghost', description: 'Digital ghost of Bhanu Bhakta Acharya, blending Nepali roots with modern innovation.', chats: '1', link: '#', category: 'Learning & Knowledge' },
+    { name: 'Pali Dhamma Guide', description: 'Dhamma Guide that speaks in Pali.', chats: '1', link: '#', category: 'Learning & Knowledge' },
+    { name: 'Telugu ↔ Nepali', description: 'Translation device between Nepali and Telugu and vice versa.', chats: '40+', link: '#', category: 'Language & Translation' },
+    { name: 'Sherpa Language Expert', description: 'शेर्पा भाषा अभ्यास — Sherpa language practice tool.', chats: '2', link: '#', category: 'Language & Translation' },
+    { name: 'Saathi', description: 'नेपाली अभिभावकहरूका लागि मैत्री आवाज सहायक — Voice helper for Nepali parents.', chats: '2', link: '#', category: 'Language & Translation' },
+    { name: 'बुद्धिमान साथी', description: 'नेपालीमा कुरा गर्ने AI — Nepali-speaking AI companion.', chats: '2', link: '#', category: 'Language & Translation' },
+    { name: 'Laura — The Girlfriend', description: 'Researched, adaptive virtual companion focused on emotional well-being.', chats: '30+', link: '#', category: 'Lifestyle & Companions' },
+    { name: 'Laptop Shopping Buddy', description: 'Compares and recommends laptops and tech gear tailored to your needs.', chats: '7', link: '#', category: 'Lifestyle & Companions' },
+    { name: 'Family Kitchen Bot', description: 'Friendly restaurant bot to help choose food fast.', chats: '10+', link: '#', category: 'Lifestyle & Companions' },
+    { name: 'Health Advisor', description: 'Eye health advisors, including hospital and doctor insights.', chats: '3', link: '#', category: 'Lifestyle & Companions' },
+    { name: 'LaughLoader', description: 'Generates jokes and comedic content for various humor styles.', chats: '2', link: '#', category: 'Lifestyle & Companions' },
+    { name: 'Visual Decision Maker', description: 'Expert in creating, visualizing, and analyzing decision trees.', chats: '-', link: '#', category: 'Lifestyle & Companions' },
+    { name: 'MMC', description: 'Public GPT available to everyone.', chats: '2', link: '#', category: 'Lifestyle & Companions' },
 ]
 
-const gptCategories = ['All', ...Array.from(new Set(gpts.map(g => g.category)))]
+const gptCategories = ['All', 'Productivity & Tech', 'Creative Studio', 'Learning & Knowledge', 'Language & Translation', 'Lifestyle & Companions']
 
 export default function ArtifactVault() {
     const [activeTab, setActiveTab] = useState<TabType>('websites')
@@ -137,7 +137,7 @@ export default function ArtifactVault() {
 
             {/* Header */}
             <div className="relative z-10 text-center mb-16">
-                <span className="inline-block px-4 py-2 mb-4 text-sm font-medium tracking-widest uppercase text-red-accent bg-red-accent/10 rounded-full border border-red-accent/20">
+                <span className="inline-block px-4 py-2 mb-4 text-sm font-semibold tracking-widest uppercase text-red-accent bg-red-accent/10 rounded-full border border-red-accent/20">
                     My Creations
                 </span>
                 <h2 className="text-display font-bold text-text-primary mb-4">
@@ -158,13 +158,13 @@ export default function ArtifactVault() {
                                 key={tab.id}
                                 onClick={() => { setActiveTab(tab.id); setSelectedCategory('All'); setSearchTerm('') }}
                                 className={`group flex items-center gap-2.5 px-6 py-3 rounded-xl font-medium text-sm uppercase tracking-wider transition-all duration-400 ${activeTab === tab.id
-                                        ? 'bg-red-accent text-white shadow-glow-red'
-                                        : 'bg-dark-card/80 text-muted-foreground border border-white/5 hover:border-red-accent/30 hover:text-text-primary'
+                                    ? 'bg-red-accent text-white shadow-glow-red'
+                                    : 'bg-dark-card/80 text-muted-foreground border border-white/5 hover:border-red-accent/30 hover:text-text-primary'
                                     }`}
                             >
                                 <Icon className={`w-4 h-4 transition-transform duration-300 ${activeTab === tab.id ? 'scale-110' : 'group-hover:scale-110'}`} />
                                 <span>{tab.label}</span>
-                                <span className={`ml-1 px-2 py-0.5 text-xs rounded-full ${activeTab === tab.id ? 'bg-white/20' : 'bg-white/5'
+                                <span className={`ml-2 px-2.5 py-0.5 text-sm font-bold rounded-full ${activeTab === tab.id ? 'bg-white/20 text-white' : 'bg-white/10 text-white/70'
                                     }`}>
                                     {tab.count}
                                 </span>
@@ -191,8 +191,8 @@ export default function ArtifactVault() {
                                 {/* Platform badge */}
                                 <div className="flex items-center justify-between mb-4">
                                     <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium ${site.platform === 'vercel'
-                                            ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20'
-                                            : 'bg-green-500/10 text-green-400 border border-green-500/20'
+                                        ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20'
+                                        : 'bg-green-500/10 text-green-400 border border-green-500/20'
                                         }`}>
                                         {site.platform === 'github' ? <Github className="w-3 h-3" /> : <Globe className="w-3 h-3" />}
                                         {site.platform === 'vercel' ? 'Vercel' : 'GitHub Pages'}
@@ -251,8 +251,8 @@ export default function ArtifactVault() {
                                     key={cat}
                                     onClick={() => setSelectedCategory(cat)}
                                     className={`px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all duration-300 ${selectedCategory === cat
-                                            ? 'bg-red-accent text-white'
-                                            : 'bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-text-primary border border-white/5'
+                                        ? 'bg-red-accent text-white'
+                                        : 'bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-text-primary border border-white/5'
                                         }`}
                                 >
                                     {cat}
@@ -280,12 +280,12 @@ export default function ArtifactVault() {
                                                 {gpt.name}
                                             </h4>
                                         </div>
-                                        <span className="flex items-center gap-1 text-xs text-muted-foreground bg-white/5 px-2 py-1 rounded-full">
+                                        <span className={`flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full ${Number.parseInt(gpt.chats) >= 10 || gpt.chats.includes('+') ? 'bg-red-accent/15 text-red-accent border border-red-accent/20' : 'bg-white/5 text-muted-foreground border border-white/5'}`}>
                                             <MessageCircle className="w-3 h-3" />
                                             {gpt.chats}
                                         </span>
                                     </div>
-                                    <p className="text-xs text-muted-foreground leading-relaxed mb-3">
+                                    <p className="text-[13px] text-text-secondary/90 leading-relaxed mb-4">
                                         {gpt.description}
                                     </p>
                                     <div className="flex items-center justify-between">
